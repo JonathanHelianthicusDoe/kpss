@@ -4,7 +4,7 @@
     --monospace: "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
         "Droid Sans Mono", "Source Code Pro", "Fira Code", monospace;
     --off-white: #eee;
-    --off-black: #3f3f3f;
+    --off-black: #222;
     --kiss: #6a4d5b;
     --pie: #f57e8b;
     --storm: #ddc9ac;
@@ -18,7 +18,7 @@ ol {
     margin: 0;
     padding: 0;
     font-family: var(--sans);
-    color: var(--off-white);
+    color: var(--off-black);
 }
 
 html {
@@ -38,7 +38,11 @@ h6 {
 }
 
 a {
-    color: #90b0d0;
+    color: #284e72;
+}
+
+a:hover {
+    color: #5680a7;
 }
 
 .hidden {
@@ -46,7 +50,7 @@ a {
 }
 
 body {
-    background-color: #000;
+    background-color: var(--off-black);
     font-family: var(--sans);
 }
 
@@ -82,12 +86,12 @@ li {
     font-weight: lighter;
 }
 
-nav {
-    background-color: rgba(0, 0, 0, 0.2);
+#main-nav {
+    background-color: #0003;
     height: 2rem;
 }
 
-.navlist {
+#main-nav-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +101,7 @@ nav {
     height: 100%;
 }
 
-.navlist li {
+#main-nav-list > li {
     flex: 1 1 auto;
     list-style-type: none;
     text-align: center;
@@ -107,7 +111,8 @@ nav {
     padding: 0 5% 0 5%;
 }
 
-.navlist a {
+#main-nav-list a,
+#main-nav-list span {
     font-weight: bolder;
     color: var(--off-white);
     text-decoration: none;
@@ -119,9 +124,9 @@ nav {
     height: 100%;
 }
 
-.navlist a:hover {
+#main-nav-list a:hover {
     color: #fff;
-    text-shadow: 0 0 0.5rem rgb(255, 245, 159);
+    text-shadow: 0 0 0.5rem #fff59f;
 }
 
 .section {
@@ -139,43 +144,27 @@ nav {
     display: table;
 }
 
-#section-0,
-#section-4 {
+.section:nth-child(4n + 1) {
     background-color: var(--kiss);
+    color: var(--off-white);
 }
 
-#section-1,
-#section-5 {
+.section:nth-child(4n + 1) a {
+    color: #86b8e6;
+}
+
+.section:nth-child(4n + 1) a:hover {
+    color: #5c89b3;
+}
+
+.section:nth-child(4n + 2) {
     background-color: var(--pie);
 }
 
-#section-2 {
+.section:nth-child(4n + 3) {
     background-color: var(--storm);
 }
 
-#section-3 {
+.section:nth-child(4n) {
     background-color: var(--safe);
-}
-
-#section-2,
-#section-3 {
-    color: var(--off-black);
-}
-
-#section-2 ul,
-#section-2 ol,
-#section-3 ul,
-#section-3 ol {
-    color: var(--off-black);
-}
-
-#section-1 a,
-#section-2 a,
-#section-3 a,
-#section-5 a {
-    color: #5a748f;
-}
-
-#discord-widget {
-    float: right;
 }
