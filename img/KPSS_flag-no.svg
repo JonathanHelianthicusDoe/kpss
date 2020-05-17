@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="600"
+   version="1.1"
+   id="svg1097"
+   sodipodi:docname="KPSS_flag-no.svg"
+   inkscape:version="1.0 (1.0+r73+1)">
+  <defs
+     id="defs1101" />
+  <sodipodi:namedview
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1050"
+     id="namedview1099"
+     showgrid="false"
+     inkscape:zoom="0.9489373"
+     inkscape:cx="525.95529"
+     inkscape:cy="355.12559"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1097">
+    <sodipodi:guide
+       inkscape:color="rgb(0,0,255)"
+       inkscape:locked="false"
+       inkscape:label=""
+       id="guide1608"
+       orientation="0,1"
+       position="500,300" />
+    <sodipodi:guide
+       id="guide1610"
+       orientation="1,0"
+       position="500,300" />
+  </sodipodi:namedview>
+  <path
+     fill="#c1272d"
+     d="M0 0h1000v600H0z"
+     id="path1091"
+     style="fill:#5a65ac;fill-opacity:1" />
+  <path
+     fill="#006a44"
+     d="M0 0h1000v400H0z"
+     id="path1093"
+     style="fill:#49b534;fill-opacity:1" />
+  <path
+     fill="#fdb913"
+     d="M0 0h1000v200H0z"
+     id="path1095"
+     style="fill:#ebf342;fill-opacity:1" />
+  <path
+     style="fill:#222222;fill-opacity:1;stroke-width:1.96157;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path1594"
+     d="m 436.70282,236.68144 a 89.516512,89.516512 0 1 0 126.59436,0 89.6146,89.6146 0 0 0 -126.59436,0 z m 9.96589,116.62846 A 75.548561,75.548561 0 0 1 441.3915,252.49347 L 547.46552,358.5675 A 75.548561,75.548561 0 0 1 446.6491,353.3099 Z M 557.54913,348.7193 451.25931,242.42948 a 75.411236,75.411236 0 0 1 106.27021,106.27021 z"
+     data-name="Compound Path" />
+</svg>
