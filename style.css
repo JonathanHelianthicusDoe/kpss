@@ -21,7 +21,7 @@ ol {
 
 html {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 p,
@@ -65,6 +65,11 @@ figure img {
     max-width: 100%;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 tr {
     margin: 0;
     padding: 0;
@@ -90,6 +95,22 @@ th {
 
 legend {
     padding: 0 0.25rem 0 0.25rem;
+}
+
+details {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-color: var(--off-black);
+    border-radius: 0.5rem;
+
+    box-shadow: 0 0 1rem inset #00000080;
+}
+
+details ul,
+details ol {
+    list-style-position: inside;
 }
 
 #main-header {
@@ -231,6 +252,14 @@ legend {
     background-color: var(--safe);
 }
 
+.dark a {
+    color: #86b9f3;
+}
+
+.dark a:hover {
+    color: #8ddee4;
+}
+
 span.dark {
     background-color: var(--off-black);
 
@@ -257,6 +286,23 @@ span.dark {
 #combo-table-container {
     width: 100%;
     padding: 0.5rem 0 0.5rem 0;
+}
+
+#combo-table-noscript {
+    padding: 0.5rem 25% 0.5rem 25%;
+
+    background-color: #0d3849;
+}
+
+#combo-table-noscript a {
+    color: #bd9883;
+    text-decoration: underline;
+    padding: 0.05rem;
+    border: none;
+}
+
+#combo-table-noscript a:hover {
+    color: #ffe4bb;
 }
 
 #combo-table-controls {
@@ -289,9 +335,6 @@ span.dark {
 
 #combo-table {
     margin: 0 auto;
-
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 #combo-table td {
@@ -357,4 +400,23 @@ span.dark {
 
 .acc-tu-span.toonup {
     color: #ae50ce;
+}
+
+#footer-inner,
+#footer-links {
+    padding: 0 1rem 0 1rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-color: #fff9;
+    border-radius: 0.5rem;
+
+    box-shadow: 0 0 1rem inset #00000080;
+}
+
+#footer-links {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    float: right;
+    text-align: right;
 }

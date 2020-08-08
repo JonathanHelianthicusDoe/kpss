@@ -62,75 +62,116 @@
       <div class="inner-section">
         <h2>Gag combo table</h2>
 
-        <p>
-          This is an interactive table of gag combos that are useful in KPSS
-          play. You can use this as a reference/cheatsheet, and it should
-          hopefully be handy enough that you can use it while in battle
-          in-game. Exactly which combos are included here is subject to some
-          simplifying assumptions:
-        </p>
+        <details>
+          <summary>Info about the gag combo table</summary>
+          <p>
+            This is an interactive table of gag combos that are useful in KPSS
+            play. You can use this as a reference/cheatsheet, and it should
+            hopefully be handy enough that you can use it while in battle
+            in-game. Exactly which combos are included here is subject to some
+            simplifying assumptions:
+          </p>
 
-        <ul>
-          <li>
-            All cogs are assumed to be level 7 or higher. This is because cogs
-            below level 7 have too few HP for this approach to be useful.
-          </li>
-          <li>
-            All cogs are assumed to be at 100% HP. This table only considers
-            very simple strategies: ones that can be used to take a cog from
-            100% HP to less than 1 HP in a single round.
-          </li>
-          <li>
-            All cogs are assumed to be v1.0 cogs. Version 2.0 cogs are not
-            handled specially here, although, of course, many of these combos
-            will be useful against v2.0 cogs as well; you just have to use your
-            judgement.
-          </li>
-          <li>
-            All toons are assumed to be maxed in all four KPSS gag tracks
-            (toonup, throw, squirt, and drop).
-          </li>
-        </ul>
+          <ul>
+            <li>
+              All cogs are assumed to be level 7 or higher. This is because
+              cogs below level 7 have too few HP for this approach to be
+              useful.
+            </li>
+            <li>
+              All cogs are assumed to be at 100% HP. This table only considers
+              very simple strategies: ones that can be used to take a cog from
+              100% HP to less than 1 HP in a single round.
+            </li>
+            <li>
+              All cogs are assumed to be v1.0 cogs. Version 2.0 cogs are not
+              handled specially here, although, of course, many of these combos
+              will be useful against v2.0 cogs as well; you just have to use
+              your judgement.
+            </li>
+            <li>
+              All toons are assumed to be maxed in all four KPSS gag tracks
+              (toonup, throw, squirt, and drop).
+            </li>
+          </ul>
 
-        <p>
-          The percentages beneath each combo indicate the probability that the
-          entire combo will succeed (i.e. all gags in the combo hit their
-          target). In cases where two percentages are given, the latter
-          percentage &mdash; the one
-          <span class="dark toonup">in purple</span> &mdash; represents the
-          effective probability that all of the gags in the combo hit, given
-          that one toon uses a multi-target toonup gag (generally Bamboo Cane
-          or Juggling Cubes). This probability <em>includes</em> outcomes in
-          which all gags in the combo hit, but the toonup gag misses.
-        </p>
+          <p>
+            The percentages beneath each combo indicate the probability that
+            the entire combo will succeed (i.e. all gags in the combo hit their
+            target). In cases where two percentages are given, the latter
+            percentage &mdash; the one
+            <span class="dark toonup">in purple</span> &mdash; represents the
+            effective probability that all of the gags in the combo hit, given
+            that one toon uses a multi-target toonup gag (generally Bamboo Cane
+            or Juggling Cubes). This probability <em>includes</em> outcomes in
+            which all gags in the combo hit, but the toonup gag misses.
+          </p>
 
-        <p>
-          For each given cog level and number of gags, the combos are ordered
-          &mdash; roughly &mdash; with more &ldquo;preferable&rdquo; combos
-          towards the top. This preference does not take the accuracy into
-          account very much; the actual accuracy can be situational, and the
-          minimum acceptable accuracy is also situational. Instead, more
-          &ldquo;preferable&rdquo; combos are those that do not drain the
-          overall &ldquo;power&rdquo; of the group as much. Although the
-          &ldquo;power&rdquo; of individual gags is also situational, the idea
-          is that, over a long-run average, some gags are &ldquo;worth&rdquo;
-          more than others (in some appropriate sense).
-        </p>
+          <p>
+            For each given cog level and number of gags, the combos are ordered
+            &mdash; roughly &mdash; with more &ldquo;preferable&rdquo; combos
+            towards the top. This preference does not take the accuracy into
+            account very much; the actual accuracy can be situational, and the
+            minimum acceptable accuracy is also situational. Instead, more
+            &ldquo;preferable&rdquo; combos are those that do not drain the
+            overall &ldquo;power&rdquo; of the group as much. Although the
+            &ldquo;power&rdquo; of individual gags is also situational, the
+            idea is that, over a long-run average, some gags are
+            &ldquo;worth&rdquo; more than others (in some appropriate sense).
+          </p>
 
-        <p>
-          The gags within each combo are ordered from left to right in the
-          order that they are actually used in-game. This means that certain
-          tracks go before others (throw before squirt, squirt before drop); to
-          break ties (in the case of multiple gags from the same track), gags
-          are used in ascending order of the damage that each gag deals. This
-          tie-breaking may not <em>seem</em> relevant, but it is semantically
-          part of Toontown, because it has a large impact on how v2.0 cogs take
-          damage (or don&rsquo;t take damage, as the case may be&hellip;).
-        </p>
+          <p>
+            The gags within each combo are ordered from left to right in the
+            order that they are actually used in-game. This means that certain
+            tracks go before others (throw before squirt, squirt before drop);
+            to break ties (in the case of multiple gags from the same track),
+            gags are used in ascending order of the damage that each gag deals.
+            This tie-breaking may not <em>seem</em> relevant, but it is
+            semantically part of Toontown, because it has a large impact on how
+            v2.0 cogs take damage (or don&rsquo;t take damage, as the case may
+            be&hellip;).
+          </p>
+        </details>
       </div>
     </div>
 
     <div class="section dark" id="combo-table-section">
+      <noscript
+        ><div id="combo-table-noscript">
+          <p>
+            It looks like you have JavaScript disabled. This gag combo table
+            requires JavaScript to generate the table from a JSON file, and
+            also to make the interactive controls function.
+          </p>
+
+          <p>
+            Don&rsquo;t worry, though, all of the code on this page (and this
+            website generally) is
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://en.wikipedia.org/wiki/Free_software"
+              >free software</a
+            >, licensed to you under the terms of the
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+              >GNU Affero General Public License, version 3</a
+            >
+            (or any later version of the same license, at your option). See the
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="./web_labels.html"
+              data-jslicense="1"
+              >JavaScript license information</a
+            >
+            page for more details and access to source code.
+          </p>
+        </div>
+      </noscript>
+
       <div id="combo-table-controls">
         <fieldset>
           <legend>Max # of organic gags</legend>
@@ -228,6 +269,33 @@
       <div class="inner-section wide" id="combo-table-container">
         <table id="combo-table"></table>
       </div>
+    </div>
+
+    <div class="section dark" id="section-3">
+      <footer class="inner-section">
+        <div id="footer-inner">
+          <p id="disclaimer">
+            This is alpha software and may be horribly broken. Copyleft
+            &#x1f12f; 2018-2020, Dr. Jonathan Helianthicus Doe, IV.
+            <a href="https://www.gnu.org/licenses/agpl-3.0"
+              >All rites reversed</a
+            >.
+          </p>
+
+          <p id="footer-links">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/JonathanHelianthicusDoe/kpss"
+              >Source</a
+            >
+            &#x007c;
+            <a href="./web_labels.html" data-jslicense="1"
+              >JavaScript license information</a
+            >
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
