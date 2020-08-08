@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gag combo table &ndash; KPSS</title>
+    <meta
+      name="description"
+      content="Kiss-pie-storm-safe is a self-imposed
+      style of playing Toontown in which you make toons that are
+      soundless AND lureless AND trapless."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+
+    <script src="./main.js" async defer></script>
+  </head>
+
+  <body>
+    <div class="section" id="section-0">
+      <div class="inner-section">
+        <header id="main-header">
+          <div id="header-div">
+            <h1>Kiss-pie-storm-safe</h1>
+            <p class="subheader">Truly soundless &amp; lureless Toontown</p>
+          </div>
+
+          <div id="main-logo-container">
+            <img
+              src="../img/kpss.svg"
+              id="main-logo"
+              alt="Kiss-pie-storm-safe logo (CC BY-SA 4.0+; &ldquo;lipstick&rdquo; by Marco Livolsi, &ldquo;Pie&rdquo; by Made x Made, &ldquo;storm&rdquo; by tsv, &ldquo;safe&rdquo; by Vectorstall; all parent works CC BY licensed and obtained from the Noun Project)"
+              title="Kiss-pie-storm-safe logo (CC BY-SA 4.0+; &ldquo;lipstick&rdquo; by Marco Livolsi, &ldquo;Pie&rdquo; by Made x Made, &ldquo;storm&rdquo; by tsv, &ldquo;safe&rdquo; by Vectorstall; all parent works CC BY licensed and obtained from the Noun Project)"
+            />
+          </div>
+        </header>
+
+        <nav id="main-nav">
+          <ul id="main-nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><span>Combos</span></li>
+            <li><a href="../images.html">Images</a></li>
+            <li><a href="../source.html">Source</a></li>
+          </ul>
+        </nav>
+
+        <p>
+          Ever thought of playing the entire game of
+          <a href="https://en.wikipedia.org/wiki/Toontown_Online">Toontown</a>
+          without ever using sound or lure? Probably not, but <em>now</em> you
+          have. If that sounds interesting to you as a fun challenge or just as
+          a way to balance the game, then it is YOU that we are looking for to
+          come play <strong>kiss-pie-storm-safe</strong> (KPSS) Toontown with
+          us!
+        </p>
+      </div>
+    </div>
+
+    <div class="section" id="section-1">
+      <div class="inner-section">
+        <h2>Gag combo table</h2>
+
+        <p>
+          This is an interactive table of gag combos that are useful in KPSS
+          play. You can use this as a reference/cheatsheet, and it should
+          hopefully be handy enough that you can use it while in battle
+          in-game. Exactly which combos are included here is subject to some
+          simplifying assumptions:
+        </p>
+
+        <ul>
+          <li>
+            All cogs are assumed to be level 7 or higher. This is because cogs
+            below level 7 have too few HP for this approach to be useful.
+          </li>
+          <li>
+            All cogs are assumed to be at 100% HP. This table only considers
+            very simple strategies: ones that can be used to take a cog from
+            100% HP to less than 1 HP in a single round.
+          </li>
+          <li>
+            All cogs are assumed to be v1.0 cogs. Version 2.0 cogs are not
+            handled specially here, although, of course, many of these combos
+            will be useful against v2.0 cogs as well; you just have to use your
+            judgement.
+          </li>
+          <li>
+            All toons are assumed to be maxed in all four KPSS gag tracks
+            (toonup, throw, squirt, and drop).
+          </li>
+        </ul>
+
+        <p>
+          The percentages beneath each combo indicate the probability that the
+          entire combo will succeed (i.e. all gags in the combo hit their
+          target). In cases where two percentages are given, the latter
+          percentage &mdash; the one
+          <span class="dark toonup">in purple</span> &mdash; represents the
+          effective probability that all of the gags in the combo hit, given
+          that one toon uses a multi-target toonup gag (generally Bamboo Cane
+          or Juggling Cubes). This probability <em>includes</em> outcomes in
+          which all gags in the combo hit, but the toonup gag misses.
+        </p>
+
+        <p>
+          For each given cog level and number of gags, the combos are ordered
+          &mdash; roughly &mdash; with more &ldquo;preferable&rdquo; combos
+          towards the top. This preference does not take the accuracy into
+          account very much; the actual accuracy can be situational, and the
+          minimum acceptable accuracy is also situational. Instead, more
+          &ldquo;preferable&rdquo; combos are those that do not drain the
+          overall &ldquo;power&rdquo; of the group as much. Although the
+          &ldquo;power&rdquo; of individual gags is also situational, the idea
+          is that, over a long-run average, some gags are &ldquo;worth&rdquo;
+          more than others (in some appropriate sense).
+        </p>
+
+        <p>
+          The gags within each combo are ordered from left to right in the
+          order that they are actually used in-game. This means that certain
+          tracks go before others (throw before squirt, squirt before drop); to
+          break ties (in the case of multiple gags from the same track), gags
+          are used in ascending order of the damage that each gag deals. This
+          tie-breaking may not <em>seem</em> relevant, but it is semantically
+          part of Toontown, because it has a large impact on how v2.0 cogs take
+          damage (or don&rsquo;t take damage, as the case may be&hellip;).
+        </p>
+      </div>
+    </div>
+
+    <div class="section dark" id="combo-table-section">
+      <div id="combo-table-controls">
+        <fieldset>
+          <legend>Max # of organic gags</legend>
+
+          <label>
+            Throw
+            <input
+              type="number"
+              id="maxOrgThrow"
+              name="maxOrgThrow"
+              min="0"
+              max="4"
+              value="4"
+            />
+          </label>
+          <label>
+            Squirt
+            <input
+              type="number"
+              id="maxOrgSquirt"
+              name="maxOrgSquirt"
+              min="0"
+              max="4"
+              value="4"
+            />
+          </label>
+          <label>
+            Drop
+            <input
+              type="number"
+              id="maxOrgDrop"
+              name="maxOrgDrop"
+              min="0"
+              max="4"
+              value="4"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cog levels</legend>
+
+          <label>
+            Min
+            <input
+              type="number"
+              id="minCogLvl"
+              name="minCogLvl"
+              min="7"
+              max="12"
+              value="7"
+            />
+          </label>
+          <label>
+            Max
+            <input
+              type="number"
+              id="maxCogLvl"
+              name="maxCogLvl"
+              min="7"
+              max="12"
+              value="12"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend># of gags</legend>
+
+          <label>
+            Min
+            <input
+              type="number"
+              id="minNumGags"
+              name="minNumGags"
+              min="1"
+              max="4"
+              value="1"
+            />
+          </label>
+          <label>
+            Max
+            <input
+              type="number"
+              id="maxNumGags"
+              name="maxNumGags"
+              min="1"
+              max="4"
+              value="4"
+            />
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="inner-section wide" id="combo-table-container">
+        <table id="combo-table"></table>
+      </div>
+    </div>
+  </body>
+</html>

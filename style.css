@@ -65,6 +65,33 @@ figure img {
     max-width: 100%;
 }
 
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #0008;
+}
+
+td,
+th {
+    margin: 0;
+    padding: 0 0.25rem 0 0.25rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-color: #fff9;
+}
+
+th {
+    text-align: center;
+    font-weight: bolder;
+}
+
+legend {
+    padding: 0 0.25rem 0 0.25rem;
+}
+
 #main-header {
     display: flex;
     flex-direction: row;
@@ -163,6 +190,10 @@ figure img {
     padding: 0.5rem 25% 0.5rem 25%;
 }
 
+.inner-section.wide {
+    padding: 0.5rem;
+}
+
 @media (max-width: 60rem) {
     .inner-section {
         padding: 0.5rem 2rem 0.5rem 2rem;
@@ -198,4 +229,132 @@ figure img {
 
 .section:nth-child(4n) {
     background-color: var(--safe);
+}
+
+span.dark {
+    background-color: var(--off-black);
+
+    display: inline-block;
+    padding: 0.125rem 0.25rem 0.125rem 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.toonup {
+    color: #ae50ce;
+}
+
+.section.dark {
+    background-color: var(--off-black);
+    color: var(--off-white);
+}
+
+#combo-table-section {
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-padding: 0.5rem;
+}
+
+#combo-table-container {
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#combo-table-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#combo-table-controls > fieldset {
+    margin: 0.5rem;
+    border: 0.125rem solid #fff9;
+}
+
+#combo-table-controls label {
+    margin: 0 0.33333rem 0 0.33333rem;
+}
+
+#combo-table-controls input[type="number"] {
+    background-color: #0008 !important;
+    color: var(--off-white) !important;
+    border: 0.125rem solid #fff9;
+    padding: 0.25rem;
+
+    min-width: 2.5rem;
+    max-width: 3rem;
+    min-height: 1rem;
+}
+
+#combo-table {
+    margin: 0 auto;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#combo-table td {
+    vertical-align: top;
+}
+
+.combo-listing {
+    list-style-type: none;
+}
+
+.combo-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+.combo-listing > li:nth-child(n+2) {
+    border-top: 0.083333rem solid #fff6;
+    border-radius: 12px;
+}
+
+.combo-ul > li {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    overflow: visible;
+}
+
+.combo-ul > li > img {
+    object-fit: none;
+    object-position: 50% 50%;
+    display: block;
+}
+
+.acc-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.acc-div > span {
+    display: inline-block;
+    margin: 0 0.25rem 0 0.25rem;
+
+    color: var(--off-white);
+    text-align: center;
+}
+
+.acc-span.plural::after {
+    content: ',';
+}
+
+.acc-tu-span.toonup {
+    color: #ae50ce;
 }

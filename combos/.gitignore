@@ -1,0 +1,6 @@
+# TypeScript stuff
+main.js
+
+# npm stuff
+node_modules/
+package-lock.json

@@ -1,0 +1,32 @@
+{
+  "name": "kpss_combos",
+  "version": "0.0.0",
+  "description": "Interactive KPSS gag combo table",
+  "main": "main.ts",
+  "directories": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanHelianthicusDoe/kpss.git"
+  },
+  "keywords": [
+    "toontown",
+    "gag",
+    "combo",
+    "kpss",
+    "ttr"
+  ],
+  "author": "JonathanHelianthicusDoe",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/JonathanHelianthicusDoe/kpss/issues"
+  },
+  "homepage": "https://github.com/JonathanHelianthicusDoe/kpss#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/parser": "^3.7.1",
+    "eslint": "^7.5.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  }
+}
