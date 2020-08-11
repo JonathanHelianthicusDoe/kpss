@@ -31,7 +31,7 @@ at your option). For the relevant legal text, see
 [https://creativecommons.org/licenses/by-sa/4.0/legalcode][CC BY-SA 4.0], or
 the [img/LICENSE](img/LICENSE) file for a plaintext version.
 
-[![CC BY-SA 4.0+](./img/external/CC BY-SA_88x31.png
+[![CC BY-SA 4.0+](./img/external/CC-BY-SA_88x31.png
 "CC BY-SA 4.0+")](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Credits for the KPSS logo (all the listed constituent works are [CC
